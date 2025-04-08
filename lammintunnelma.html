@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lämmin tunnelma</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+  <link rel="stylesheet" href="styles.css"> <!-- Linkitä ulkoinen tyylitiedosto -->
+  <style>
+
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">Järvikylän kartano</div>
+    <div class="hamburger" onclick="toggleMenu()">☰</div> <!-- Hampurilaisvalikko -->
+  <nav id="nav-menu">
+      <a href="#etusivu">Etusivu</a>
+      <a href="#etusivu">Tilan historia</a>
+      <a href="#konerahoitus">Maatalous</a>
+      <a href="#palvelut">Metsätalous</a>
+      <a href="#palvelut">Palvelut</a>
+      <a href="#yritystiedot">Yhteystiedot</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Järvikylän kartano – perinteitä ja kestävyyttä maan, metsän ja ympäristön hyväksi.</h1>
+    <p>Luonnon ehdoilla, sukupolvien ajan.</p>
+    <button class="cta-button">Tutustu tilan palveluihin</button> 
+  </section>
+
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2025 Järvikylän kartano. Kaikki oikeudet pidätetään.</p>
+    </div>
+    </footer>
+   
+  
+  
+
+  <script>
+    function toggleMenu() {
+      const navMenu = document.getElementById('nav-menu');
+      navMenu.classList.toggle('show'); // Lisää tai poista "show"-luokka
+    }
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yksinkertainen</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f6f6f6;
+      color: #333;
+    }
+
+    header {
+      background-image: url('https://images.unsplash.com/photo-1597255547868-87d5f2477992');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      padding: 6rem 2rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin: 0;
+      background-color: rgba(0, 0, 0, 0.5);
+      display: inline-block;
+      padding: 1rem 2rem;
+      border-radius: 12px;
+    }
+
+    .section {
+      max-width: 1000px;
+      margin: 3rem auto;
+      padding: 0 1rem;
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+      background-color: #fff;
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      padding: 2rem;
+    }
+
+    .section img {
+      width: 80px;
+      height: 80px;
+      object-fit: cover;
+      border-radius: 12px;
+    }
+
+    .section-content {
+      flex: 1;
+    }
+
+    .section h2 {
+      font-size: 1.8rem;
+      margin: 0 0 0.5rem 0;
+    }
+
+    .section p {
+      margin: 0;
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      color: #777;
+    }
+
+    @media (max-width: 768px) {
+      .section {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .section img {
+        margin-bottom: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Järvikylän Kartano</h1>
+  </header>
+
+  <section class="section">
+    <img src="https://images.unsplash.com/photo-1605810230434-7631c5d5900a" alt="Historia">
+    <div class="section-content">
+      <h2>Historia</h2>
+      <p>Kartanon tarina alkaa 1800-luvun lopulta, jolloin ensimmäiset rakennukset nousivat järven rannalle. Sukupolvien vaihtuessa arvot ja perinteet ovat säilyneet vahvoina.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <img src="https://images.unsplash.com/photo-1621605811373-1d0a3841103b" alt="Maatalous">
+    <div class="section-content">
+      <h2>Maatalous</h2>
+      <p>Viljelemme kotimaista viljaa ja heinää kestävästi ja vastuullisesti. Pellot hoidetaan luonnon ehdoilla ja uusiutuvin menetelmin.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb" alt="Metsätalous">
+    <div class="section-content">
+      <h2>Metsätalous</h2>
+      <p>Hoidamme metsiämme pitkäjänteisesti ja luonnon monimuotoisuutta tukien. Metsä on meille tärkeä osa ekosysteemiä ja elinkeinoa.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <img src="https://images.unsplash.com/photo-1573497491208-6b1acb260507" alt="Palvelumme">
+    <div class="section-content">
+      <h2>Palvelumme</h2>
+      <p>Tarjoamme elämyksiä maaseudulla: juhlatiloja, mökkimajoitusta ja metsäretkiä. Ota yhteyttä ja varaa oma rauhallinen hetkesi luonnon keskellä.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <img src="https://images.unsplash.com/photo-1523958203904-cdcb402031fd" alt="Yhteystiedot">
+    <div class="section-content">
+      <h2>Yhteystiedot</h2>
+      <p>Sähköposti: info@jarvikylankartano.fi<br>
+         Puhelin: +358 40 123 4567<br>
+         Osoite: Kartanontie 1, 12345 Järvikylä</p>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Järvikylän Kartano. Kaikki oikeudet pidätetään.
+  </footer>
+
+</body>
+</html>

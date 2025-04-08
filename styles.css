@@ -1,0 +1,143 @@
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  color: #000;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  box-sizing: border-box;
+}
+
+.hamburger {
+  display: none; /* Piilota oletuksena */
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.logo {
+  font-family: 'tangerine', serif; /* Käytä historiallista fonttia logossa */  
+  font-size: 1.8rem;
+  text-shadow: 0 0 5px #454645; /* Hehkuva */
+  margin: 20px; /* Lisää marginaalia logolle */
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: rgba(240, 240, 240, 0.5);
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+}
+
+nav a {
+  position: relative; /* Tarvitaan ::after-pseudo-elementille */
+  margin-left: 1rem;
+  text-decoration: none;
+  color: #000;
+  font-size: 0.8rem;
+  transition: color 0.3s ease; /* Sulava värimuutos */
+}
+
+nav a::after {
+  content: ''; /* Luo tyhjä sisältö pseudo-elementille */
+  position: absolute;
+  bottom: -2px; /* Aseta alaviiva linkin alle */
+  left: 0;
+  width: 0; /* Aluksi alaviiva on näkymätön */
+  height: 2px; /* Alaviivan korkeus */
+  background-color: #000; /* Alaviivan väri */
+  transition: width 0.3s ease; /* Sulava leveysmuutos */
+}
+
+nav a:hover {
+  color: #555; /* Vaihda linkin väri hover-tilassa */
+}
+
+nav a:hover::after {
+  width: 100%; /* Laajenna alaviiva koko linkin leveydelle */
+}
+
+  /* Hampurilaisvalikko pienemmille näytöille */
+  @media (max-width: 768px) {
+    .hamburger {
+      display: block; /* Näytä hampurilaisvalikko pienillä näytöillä */
+    }
+
+    nav {
+      display: none; /* Piilota navigointi oletuksena */
+      flex-direction: column; /* Aseta linkit pystysuuntaan */
+      position: absolute;
+      top: 60px;
+      right: 20px;
+      background-color: rgba(255, 255, 255, 0.9);
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      border-radius: 5px;
+    }
+
+    nav a {
+      margin: 10px 0;
+    }
+
+    nav.show {
+      display: flex; /* Näytä navigointi, kun hampurilaisvalikko avataan */
+    }
+  }
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  background: url('kuvat/ChatGPT Image 7. huhtik. 2025 klo 12.53.32.png') no-repeat center center/cover;
+  height: 100vh;
+  padding: 0 20px 0 20px;
+  color: #000;
+}
+.hero h1 {
+  font-size: 2rem;
+  max-width: 600px;
+}
+.hero p {
+  margin: 1rem 0;
+  max-width: 500px;
+}
+.cta-button {
+  background-color: #000;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); /* Lisää varjo */
+  transition: box-shadow 0.3s ease; /* Sulava siirtymä hover-tilassa */
+}
+
+.footer-content {
+  position: absolute; /* Sijoita footer absoluuttisesti */
+  bottom: 0; /* Aseta footer sivun alalaitaan */
+  left: 50%; /* Keskitä vaakasuunnassa */
+  transform: translateX(-50%); /* Siirrä footerin keskikohta */
+  padding: 1rem; /* Lisää sisäistä marginaalia */
+  text-align: center; /* Keskitä teksti */
+  width: 100%; /* Tee footerista täysleveä */
+  box-sizing: border-box; /* Sisällytä padding elementin kokoon */
+}
+
+.footer-content p {
+  margin: 0; /* Poista oletus marginaali */
+  font-size: 0.9rem; /* Pienennä fonttikokoa */
+  color: #000; /* Musta teksti */
+}
+@media (min-width: 768px) {
+  .hero h1 {
+    font-size: 3rem;
+  }
+}

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tyylikäs ja raikas</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .fade-in {
+      opacity: 0;
+      transform: translateY(50px);
+      transition: opacity 0.8s ease, transform 0.8s ease;
+    }
+
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800 scroll-smooth">
+
+  <!-- Hero -->
+  <header class="bg-cover bg-center h-[60vh] flex items-center justify-center text-white text-center" style="background-image: url('kuvat/ChatGPT Image 7. huhtik. 2025 klo 12.53.32.png')">
+    <div class="bg-black/50 p-6 rounded-xl">
+      <h1 class="text-4xl md:text-6xl font-bold tracking-wide">Järvikylän kartano</h1>
+      <p class="text-lg mt-4">Perinteitä, luontoa ja nykyaikaa.</p>
+    </div>
+  </header>
+
+  <!-- Navigaatio -->
+  <nav class="bg-white shadow sticky top-0 z-50">
+    <ul class="flex flex-wrap justify-center gap-6 py-4 text-lg font-medium">
+      <li><a href="#historia" class="hover:text-green-700 transition">Historia</a></li>
+      <li><a href="#maatalous" class="hover:text-green-700 transition">Maatalous</a></li>
+      <li><a href="#metsatalous" class="hover:text-green-700 transition">Metsätalous</a></li>
+      <li><a href="#palvelumme" class="hover:text-green-700 transition">Palvelumme</a></li>
+      <li><a href="#yhteystiedot" class="hover:text-green-700 transition">Yhteystiedot</a></li>
+    </ul>
+  </nav>
+
+  <!-- Sisältö -->
+  <main class="max-w-6xl mx-auto px-4 py-12 space-y-24">
+    <!-- Osio komponentti -->
+    <section id="historia" class="section fade-in scroll-mt-24 flex flex-col md:flex-row items-center gap-8">
+      <img src="kuvat/vanha_kartano.jpg" alt="Historia" class="w-full md:w-1/3 rounded-xl shadow-md"/>
+      <div class="md:w-2/3">
+        <h2 class="text-3xl font-semibold mb-4 text-green-800">Historia</h2>
+        <p class="text-lg">Kartanon juuret ulottuvat 1800-luvulle, jolloin ensimmäinen sukupolvi rakensi tilan järven rannalle. Perinteet ja arvot ovat säilyneet vahvoina sukupolvien yli.</p>
+      </div>
+    </section>
+
+    <section id="maatalous" class="section fade-in scroll-mt-24 flex flex-col md:flex-row items-center gap-8">
+      <img src="kuvat/viljan_puinti.jpg" alt="Maatalous" class="w-full md:w-1/3 rounded-xl shadow-md"/>
+      <div class="md:w-2/3">
+        <h2 class="text-3xl font-semibold mb-4 text-green-800">Maatalous</h2>
+        <p class="text-lg">Viljelemme kotimaista viljaa, heinää ja palkokasveja luonnonmukaisesti. Kestävä kehitys ja biodiversiteetti ovat toimintamme ytimessä.</p>
+      </div>
+    </section>
+
+    <section id="metsatalous" class="section fade-in scroll-mt-24 flex flex-col md:flex-row items-center gap-8">
+      <img src="kuvat/vihreä_metsä.jpg" alt="Metsätalous" class="w-full md:w-1/3 rounded-xl shadow-md"/>
+      <div class="md:w-2/3">
+        <h2 class="text-3xl font-semibold mb-4 text-green-800">Metsätalous</h2>
+        <p class="text-lg">Hoidamme metsiä pitkäjänteisesti luontoa kunnioittaen. Metsät ovat meille paitsi resurssi myös virkistysalue ja luonnon monimuotoisuuden tukipilari. Tila käsittää 1950 hehtaaria metsää, josta 100 hehtaaria kuuluu Natura 2000 -alueisiin.</p>
+      </div>
+    </section>
+
+    <section id="palvelumme" class="section fade-in scroll-mt-24 flex flex-col md:flex-row items-center gap-8">
+      <img src="https://images.unsplash.com/photo-1573497491208-6b1acb260507" alt="Palvelumme" class="w-full md:w-1/3 rounded-xl shadow-md"/>
+      <div class="md:w-2/3">
+        <h2 class="text-3xl font-semibold mb-4 text-green-800">Palvelumme</h2>
+        <p class="text-lg">Tarjoamme laadukkaita ja joustavia maaseutupalveluita Järvikylässä ja lähialueilla. 
+          <br>
+          Meillä on vuosien kokemus maanviljelyksestä, metsänhoidosta ja tiestön kunnossapidosta. 
+          Käytössämme on nykyaikainen kalusto ja vahva paikallistuntemus.
+          <br>
+          <b>Tienhoitotyöt</b>
+          Tarjoamme tiekunnille ja yksityisteille seuraavia kunnossapitopalveluita:
+          - Teiden lanaus ja tasoitus
+          - Soran ajo ja levitys
+          - Talvikunnossapito (auraukset, hiekoitukset)
+          
+          <b>Metsäraivaus</b>
+          Teemme metsänhoitotöitä vastuullisesti ja tehokkaasti.
+          <br> 
+          <b>Palveluihimme kuuluu</b>
+          - Alikasvoksen raivaus
+          - Pientareiden siistiminen
+          - Tonttien ja tilojen raivaustyöt
+          
+          Kaikki työt toteutetaan huolellisesti ja asiakkaan tarpeiden mukaan. Ota yhteyttä, niin räätälöidään juuri sinulle sopiva ratkaisu!</p>
+      </div>
+    </section>
+
+    <section id="yhteystiedot" class="section fade-in scroll-mt-24 flex flex-col md:flex-row items-center gap-8">
+      <img src="https://images.unsplash.com/photo-1523958203904-cdcb402031fd" alt="Yhteystiedot" class="w-full md:w-1/3 rounded-xl shadow-md"/>
+      <div class="md:w-2/3">
+        <h2 class="text-3xl font-semibold mb-4 text-green-800">Yhteystiedot</h2>
+        <p class="text-lg whitespace-pre-line">
+          📍 Kartanontie 1, 12345 Järvikylä
+          📞 +358 40 123 4567
+          ✉️ info@jarvikylankartano.fi
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="text-center text-sm text-gray-600 py-6 border-t">
+    © 2025 Järvikylän Kartano. Kaikki oikeudet pidätetään.
+  </footer>
+
+  <!-- Interaktiivisuus (fade-in kun osiot näkyy) -->
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, {
+      threshold: 0.2
+    });
+
+    document.querySelectorAll('.fade-in').forEach(section => {
+      observer.observe(section);
+    });
+  </script>
+</body>
+</html>
