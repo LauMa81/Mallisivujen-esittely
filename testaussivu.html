@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="fi">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Järvikylän kartano</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    body,
+    html {
+      height: 100%;
+    }
+
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: rgba(255, 255, 255, 0.7);
+      display: flex;
+      justify-content: flex-end;
+      gap: 1.5rem;
+      padding: 1rem 2rem;
+      z-index: 10;
+    }
+
+    header a {
+      text-decoration: none;
+      color: #000;
+      font-weight: 500;
+    }
+
+    .hero {
+      height: 100vh;
+      background: url('your-image.jpg') no-repeat center center/cover;
+      color: #000;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 4rem;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      max-width: 50%;
+      line-height: 1.2;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+
+    .hero button {
+      padding: 1rem 2rem;
+      background-color: #000;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .hero button:hover {
+      background-color: #444;
+    }
+
+    .grid-nav {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 2rem;
+      padding: 4rem 2rem;
+      background: #f2f2f2;
+      text-align: center;
+    }
+
+    .nav-box {
+      background: white;
+      border-radius: 12px;
+      padding: 2rem 1rem;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+      text-decoration: none;
+      color: #000;
+    }
+
+    .nav-box:hover {
+      transform: translateY(-5px);
+    }
+
+    .nav-box img {
+      width: 100%;
+      max-width: 100px;
+      margin-bottom: 1rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      color: #666;
+      background: #fff;
+    }
+
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 2rem;
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <a href="#">Etusivu</a>
+    <a href="#historia">Tilan historia</a>
+    <a href="#maatalous">Maatalous</a>
+    <a href="#metsatalous">Metsätalous</a>
+    <a href="#palvelut">Palvelut</a>
+    <a href="#yhteystiedot">Yhteystiedot</a>
+  </header>
+
+  <section class="hero">
+    <h1>Järvikylän kartano – perinteitä ja kestävyyttä maan, metsän ja ympäristön hyväksi.</h1>
+    <p>Luonnon ehdoilla, sukupolvien ajan.</p>
+    <button>Tutustu tilan palveluihin</button>
+  </section>
+
+  <section class="grid-nav">
+    <a class="nav-box" href="#historia">
+      <img src="historia.png" alt="Historia">
+      <h3>Tilan historia</h3>
+    </a>
+    <a class="nav-box" href="#maatalous">
+      <img src="maatalous.png" alt="Maatalous">
+      <h3>Maatalous</h3>
+    </a>
+    <a class="nav-box" href="#metsatalous">
+      <img src="metsatalous.png" alt="Metsätalous">
+      <h3>Metsätalous</h3>
+    </a>
+    <a class="nav-box" href="#palvelut">
+      <img src="palvelut.png" alt="Palvelut">
+      <h3>Palvelumme</h3>
+    </a>
+    <a class="nav-box" href="#yhteystiedot">
+      <img src="yhteystiedot.png" alt="Yhteystiedot">
+      <h3>Yhteystiedot</h3>
+    </a>
+  </section>
+
+  <footer>
+    &copy; 2025 Järvikylän kartano. Kaikki oikeudet pidätetään.
+  </footer>
+</body>
+
+</html>

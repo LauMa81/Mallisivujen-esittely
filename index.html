@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Järvikylän Kartano – Esittely</title>
+  <title>Mallisivujen esittely</title>
   <style>
     * {
       box-sizing: border-box;
@@ -31,41 +31,42 @@
     }
 
     .card {
-      background-color: white;
-      display: flex;
-      flex-direction: row;
-      border-radius: 12px;
-      overflow: hidden;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-      transition: transform 0.2s;
-      text-decoration: none;
-      color: inherit;
-    }
+    background-color: white;
+    display: flex;
+    flex-direction: column; /* Aseta sisältö pystysuuntaan */
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    text-decoration: none;
+    color: inherit;
+  }
 
     .card:hover {
       transform: scale(1.02);
     }
 
     .card img {
-      width: 40%;
-      object-fit: cover;
-    }
+    width: 100%; /* Kuva täyttää laatikon leveyden */
+    height: auto; /* Säilytä kuvan mittasuhteet */
+    object-fit: cover;
+  }
 
-    .card-content {
-      padding: 1rem;
-      flex: 1;
-    }
+  .card-content {
+    padding: 1rem;
+    flex: 1;
+  }
 
-    .card-content h2 {
-      margin: 0 0 0.5rem;
-      color: #2c6e49;
-    }
+  .card-content h2 {
+    margin: 0 0 0.5rem;
+    color: #2c6e49;
+  }
 
-    .card-content p {
-      margin: 0;
-      font-size: 0.95rem;
-      line-height: 1.4;
-    }
+  .card-content p {
+    margin: 0;
+    font-size: 0.95rem;
+    line-height: 1.4;
+  }
 
     @media (max-width: 600px) {
       .card {
@@ -88,7 +89,35 @@
       <img src="kuvat/lammin_tunnelma.png" alt="Lämmin tunnelma">
       <div class="card-content">
         <h2>Lämmin tunnelma</h2>
-        <p>Tutustu Järvikylän Kartanon pitkään ja kiehtovaan historiaan sukupolvien takaa.</p>
+        <p><b>Copilot arvostelu:</b></p>
+        <ul>
+          <li><b>Ulkoasu ja värimaailma:</b>
+            <ul>
+              <li>Sivun värimaailma on lämmin ja maanläheinen, mikä sopii hyvin kartano- ja maatalousteemaan.</li>
+              <li>Fonttivalinnat, kuten Tangerine, tuovat perinteistä ja eleganttia tunnelmaa.</li>
+            </ul>
+          </li>
+          <li><b>Sisältö ja rakenne:</b>
+            <ul>
+              <li>Sivun otsikko ja sankariteksti ovat selkeät ja kertovat hyvin kartanon arvoista ja toiminnasta.</li>
+              <li>Navigointipalkki on yksinkertainen ja toimiva, mutta sen hover-efekti voisi olla visuaalisesti houkuttelevampi.</li>
+            </ul>
+          </li>
+          <li><b>Käytettävyys:</b>
+            <ul>
+              <li>Hampurilaisvalikko toimii hyvin pienemmillä näytöillä, mutta sen animaatio voisi olla sulavampi.</li>
+              <li>"Tutustu tilan palveluihin" -painike on hyvin sijoitettu ja selkeä, mutta sen hover-efekti voisi olla houkuttelevampi.</li>
+            </ul>
+          </li>
+          <li><b>Parannusehdotukset:</b>
+            <ul>
+              <li>Sankaritaustaan voisi lisätä kuvan, joka kuvastaa kartanon toimintaa.</li>
+              <li>Navigointilinkkien hover-efekti voisi olla koristeellisempi.</li>
+              <li>Footerin taustaväri voisi erottaa sen paremmin muusta sisällöstä.</li>
+            </ul>
+          </li>
+        </ul>
+        <p><b>Yhteenveto:</b> Sivun rakenne ja värimaailma ovat hyvin suunniteltuja ja sopivat teemaan. Pieniä parannuksia visuaaliseen ilmeeseen ja käytettävyyteen voisi tehdä, jotta sivu olisi entistä houkuttelevampi ja käyttäjäystävällisempi.</p>
       </div>
     </a>
 
@@ -96,7 +125,35 @@
       <img src="kuvat/pelto.png" alt="pelto-miljöö">
       <div class="card-content">
         <h2>Peltomiljöö</h2>
-        <p>Katso miten viljelemme maata vastuullisesti ja modernilla kalustolla.</p>
+        <p><b>Copilot arvostelu:</b></p>
+    <ul>
+      <li><b>Ulkoasu ja värimaailma:</b>
+        <ul>
+          <li>Taustakuva pellosta on visuaalisesti vaikuttava ja sopii hyvin sivun teemaan.</li>
+          <li>Läpinäkyvät valkoiset taustat otsikon ja tekstin takana parantavat luettavuutta, mutta niiden tyyliä voisi hienosäätää.</li>
+        </ul>
+      </li>
+      <li><b>Sisältö ja rakenne:</b>
+        <ul>
+          <li>Sivun otsikko ja lyhyt kuvaus antavat hyvän yleiskuvan yrityksen toiminnasta.</li>
+          <li>Navigointipalkki on yksinkertainen ja toimiva, mutta sen hover-efekti voisi olla visuaalisesti houkuttelevampi.</li>
+        </ul>
+      </li>
+      <li><b>Käytettävyys:</b>
+        <ul>
+          <li>Sivun rakenne on responsiivinen, ja sankaritausta mukautuu hyvin eri näyttökokoihin.</li>
+          <li>Navigointilinkkien kontrastia voisi parantaa, jotta ne erottuvat paremmin taustasta.</li>
+        </ul>
+      </li>
+      <li><b>Parannusehdotukset:</b>
+        <ul>
+          <li>Taustakuvan tummennus (overlay) voisi parantaa tekstin luettavuutta.</li>
+          <li>Navigointipalkki voisi sisältää hover-efektin, kuten alaviivan tai värimuutoksen.</li>
+          <li>Footer puuttuu kokonaan, mikä voisi antaa sivulle viimeistellymmän ilmeen.</li>
+        </ul>
+      </li>
+    </ul>
+    <p><b>Yhteenveto:</b> Sivun rakenne ja visuaalinen ilme ovat hyvin suunniteltuja ja sopivat teemaan. Pieniä parannuksia, kuten taustakuvan tummennus ja navigointilinkkien hover-efektit, voisi tehdä, jotta sivu olisi entistä houkuttelevampi ja käyttäjäystävällisempi.</p>
       </div>
     </a>
 
@@ -104,7 +161,35 @@
       <img src="kuvat/tyylikas.png" alt="tyylikäs ja selkeä">
       <div class="card-content">
         <h2>Tyylikäs ja selkeä</h2>
-        <p>Luonnonmukaista metsänhoitoa, raivausta ja maisemointia.</p>
+        <p><b>Copilot arvostelu:</b></p>
+    <ul>
+      <li><b>Ulkoasu ja värimaailma:</b>
+        <ul>
+          <li>Sivun värimaailma on moderni ja raikas, mikä sopii hyvin kartano- ja maatalousteemaan.</li>
+          <li>Taustakuvat ja vihreän sävyt tuovat luonnonläheisyyttä ja harmoniaa sivun ilmeeseen.</li>
+        </ul>
+      </li>
+      <li><b>Sisältö ja rakenne:</b>
+        <ul>
+          <li>Sivun otsikko ja sankaritausta (hero) ovat selkeät ja antavat hyvän ensivaikutelman.</li>
+          <li>Sisältö on jaettu selkeisiin osioihin, ja jokainen osio on hyvin jäsennelty ja helposti luettavissa.</li>
+        </ul>
+      </li>
+      <li><b>Käytettävyys:</b>
+        <ul>
+          <li>Sivun rakenne on responsiivinen, ja se mukautuu hyvin eri näyttökokoihin.</li>
+          <li>Fade-in-animaatiot tuovat interaktiivisuutta ja tekevät sivusta dynaamisemman.</li>
+        </ul>
+      </li>
+      <li><b>Parannusehdotukset:</b>
+        <ul>
+          <li>Sankaritaustan (hero) teksti voisi olla hieman suurempi pienemmillä näytöillä.</li>
+          <li>Navigointipalkki voisi sisältää aktiivisen linkin korostuksen, kuten alaviivan tai värimuutoksen.</li>
+          <li>Footerin visuaalista ilmettä voisi parantaa lisäämällä esimerkiksi taustavärin tai koristeellisen elementin.</li>
+        </ul>
+      </li>
+    </ul>
+    <p><b>Yhteenveto:</b> Sivun rakenne ja visuaalinen ilme ovat erittäin hyvin suunniteltuja ja sopivat teemaan. Tailwind CSS:n käyttö tekee sivusta modernin ja responsiivisen. Pieniä parannuksia, kuten navigointipalkin aktiivisen linkin korostus ja sankaritaustan tekstin optimointi, voisi tehdä, jotta sivu olisi entistä houkuttelevampi ja käyttäjäystävällisempi.</p>
       </div>
     </a>
 
@@ -112,7 +197,36 @@
       <img src="kuvat/viljelija.png" alt="Viljelijä">
       <div class="card-content">
         <h2>Viljelijä</h2>
-        <p>Tarjoamme peltotyöt, tienhoitopalvelut ja metsänraivauksen – lue lisää.</p>
+        <p><b>Copilot arvostelu:</b></p>
+    <ul>
+      <li><b>Ulkoasu ja värimaailma:</b>
+        <ul>
+          <li>Taustakuva on visuaalisesti vaikuttava ja sopii hyvin kartanoteemaan.</li>
+          <li>Parallax-efekti tuo modernia ja dynaamista ilmettä sivulle.</li>
+          <li>Tekstin taustalla oleva harmaa laatikko parantaa luettavuutta, mutta sen väriä voisi hienosäätää.</li>
+        </ul>
+      </li>
+      <li><b>Sisältö ja rakenne:</b>
+        <ul>
+          <li>Sivun otsikko "Järvikylän kartano" on hyvin sijoitettu ja keskeinen.</li>
+          <li>Lisäsisältöä, kuten lyhyt kuvaus tai alateksti, voisi lisätä, jotta sivu olisi informatiivisempi.</li>
+        </ul>
+      </li>
+      <li><b>Käytettävyys:</b>
+        <ul>
+          <li>Parallax-efekti toimii hyvin ja tuo sivulle interaktiivisuutta.</li>
+          <li>Sivun responsiivisuus on hyvä, mutta otsikon ja tekstin sijoittelua voisi hienosäätää pienemmillä näytöillä.</li>
+        </ul>
+      </li>
+      <li><b>Parannusehdotukset:</b>
+        <ul>
+          <li>Lisää navigointipalkki, jotta käyttäjät voivat helposti siirtyä muihin sivuihin.</li>
+          <li>Taustakuvan tummennus (overlay) voisi parantaa tekstin luettavuutta.</li>
+          <li>Footer voisi sisältää esimerkiksi yhteystiedot tai linkkejä muihin osioihin.</li>
+        </ul>
+      </li>
+    </ul>
+    <p><b>Yhteenveto:</b> Sivun rakenne ja visuaalinen ilme ovat yksinkertaisia mutta toimivia. Parallax-efekti tuo modernia ilmettä, mutta sivu voisi hyötyä lisäelementeistä, kuten navigointipalkista, footerista ja lisäsisällöstä.</p>
       </div>
     </a>
 
@@ -120,7 +234,35 @@
       <img src="kuvat/yksinkertainen.png" alt="yksinkertainen">
       <div class="card-content">
         <h2>Pelkistetty ja yksinkertainen</h2>
-        <p>Ota yhteyttä ja sovi palvelusta – autamme mielellämme!</p>
+        <p><p><b>Copilot arvostelu:</b></p>
+        <ul>
+          <li><b>Ulkoasu ja värimaailma:</b>
+            <ul>
+              <li>Sivun värimaailma on yksinkertainen ja selkeä, mikä tukee minimalistista teemaa.</li>
+              <li>Taustaväri ja korttien sävyt ovat hillittyjä, mutta ne voisivat hyötyä hieman vahvemmasta kontrastista, jotta sisältö erottuu paremmin.</li>
+            </ul>
+          </li>
+          <li><b>Sisältö ja rakenne:</b>
+            <ul>
+              <li>Sivun otsikko ja sisältö ovat selkeitä ja helposti ymmärrettäviä.</li>
+              <li>Korttien asettelu on responsiivinen ja hyvin järjestetty, mutta tekstin ja kuvien välistä marginaalia voisi lisätä, jotta sisältö näyttää ilmavammalta.</li>
+            </ul>
+          </li>
+          <li><b>Käytettävyys:</b>
+            <ul>
+              <li>Navigointilinkit ovat selkeät, mutta niiden hover-efekti voisi olla visuaalisesti houkuttelevampi, esimerkiksi lisäämällä animaatioita tai koristeellisia alaviivoja.</li>
+              <li>Korttien hover-efekti (skaalaus) on hyvä, mutta sitä voisi korostaa lisäämällä varjoja tai muita visuaalisia tehosteita.</li>
+            </ul>
+          </li>
+          <li><b>Parannusehdotukset:</b>
+            <ul>
+              <li>Fontin kokoa voisi suurentaa hieman, jotta se olisi helpompi lukea erityisesti mobiililaitteilla.</li>
+              <li>Kuvien ja tekstin välistä marginaalia voisi lisätä, jotta kortit näyttävät tasapainoisemmilta.</li>
+              <li>Voisi harkita lisätä animaatioita tai hover-efektejä kortteihin, jotta ne tuntuvat interaktiivisemmilta.</li>
+            </ul>
+          </li>
+        </ul>
+        <p><b>Yhteenveto:</b> Sivun rakenne ja värimaailma ovat hyvin suunniteltuja ja sopivat minimalistiseen teemaan. Pieniä parannuksia visuaaliseen ilmeeseen ja käytettävyyteen voisi tehdä, jotta sivu olisi entistä houkuttelevampi ja käyttäjäystävällisempi.</p>
       </div>
     </a>
 
@@ -128,8 +270,37 @@
       <img src="kuvat/ensimmainen_demosivu.png" alt="ruskea sävy">
       <div class="card-content">
         <h2>Ensimmäinen demosivu</h2>
-        <p>Ota yhteyttä ja sovi palvelusta – autamme mielellämme!</p>
-      </div>
+        <p>Copilot arvostelu:
+          <ul>
+           <b>Ulkoasu ja värimaailma:</b>
+             <li>Sivun värimaailma on hillitty ja maanläheinen, 
+              mikä sopii hyvin kartano- ja maatalousteemaan. 
+              Taustaväri ja korttien sävyt tukevat kokonaisuutta.</li>
+             <li>Navigointipalkki on selkeä ja hyvin sijoitettu, 
+              mutta sen fonttikoko voisi olla hieman suurempi parantaakseen luettavuutta.</li>
+          
+           <b>Sisältö ja rakenne:</b>
+             <li>Sivun otsikko ja pääviesti ovat selkeät ja kertovat hyvin sivun tarkoituksesta.</li>
+             <li>Korttien asettelu on siisti ja responsiivinen, mutta tekstin ja kuvien välistä 
+              kontrastia voisi parantaa, jotta sisältö erottuu paremmin.</li>
+          
+           <b>Käytettävyys:</b>
+             <li>Navigointilinkit ovat selkeät, mutta niiden hover-efekti 
+              voisi olla visuaalisesti houkuttelevampi, esimerkiksi lisäämällä 
+              animaatioita tai koristeellisia alaviivoja.</li>
+            <li>  "Lue lisää tilan historiasta" -painike on hyvin sijoitettu</li>
+          
+           <b>Parannusehdotukset:</b>
+             <li>Kuvien ja tekstin välistä marginaalia voisi lisätä, jotta sisältö näyttää ilmavammalta.</li>
+          <br>
+             <li>Fontin kokoa voisi suurentaa hieman, jotta se olisi helpompi lukea erityisesti mobiililaitteilla.</li>
+             <li>Voisi harkita lisätä animaatioita tai hover-efektejä kortteihin, 
+              jotta ne tuntuvat interaktiivisemmilta.</li>
+              <br>
+          <b>Yhteenveto:</b>
+          Sivun rakenne ja värimaailma ovat hyvin suunniteltuja ja sopivat teemaan. Pieniä parannuksia visuaaliseen ilmeeseen ja käytettävyyteen voisi tehdä, jotta sivu olisi entistä houkuttelevampi ja käyttäjäystävällisempi.</p>
+        </ul>
+        </div>
     </a>
   </div>
 
